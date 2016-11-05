@@ -1,0 +1,58 @@
+﻿2016-11-05 12:56:56.493 T:6336    INFO: Successed to initialize libcurl
+2016-11-05 12:56:56.493 T:6336 WARNING: InitADCache filepath empty
+2016-11-05 12:56:56.493 T:6336   DEBUG: GetModuleFileName  C:\Program Files (x86)\IQIYI Video\PStyle\
+2016-11-05 12:56:56.493 T:6336    INFO: PingBackManage::Init:  /pingback.db
+2016-11-05 12:56:56.493 T:6336    INFO: PumaMediaplayer Build on [Jun 15 2016 17:41:38]
+2016-11-05 12:56:56.493 T:6336   DEBUG: InitFFmpeg
+2016-11-05 12:56:56.493 T:6336   DEBUG: init FFmpeg begin!
+2016-11-05 12:56:56.494 T:6336   DEBUG: ffmpeg[INFO]: [ffmpeg]:@(#)Id: Verion:1.0.41 Released by iqiyi. Build @May  4 2016 00:25:42 2fdd42e2f58dae148608195fd0420e380e5f621c
+2016-11-05 12:56:56.494 T:6336   DEBUG: init FFmpeg end!
+2016-11-05 12:56:56.494 T:6336 WARNING: StartModule DRM module path: C:\Program Files (x86)\IQIYI Video\PStyle\Wasabi.dll
+2016-11-05 12:56:56.494 T:6336   ERROR: Initialize Dynamic Load  DRM Module Failed: C:\Program Files (x86)\IQIYI Video\PStyle\Wasabi.dll
+2016-11-05 12:56:56.494 T:6336    INFO: Init HCDN Module Param : (kernel path: rnel_QyClient\, cache path:, cache size:0)
+2016-11-05 12:56:56.494 T:6336 WARNING: Init HCDN Module:'p2p_kernel_path or local_cache_path not exists!'
+2016-11-05 12:56:56.494 T:6336 WARNING: HCDN StartModule...
+2016-11-05 12:56:56.494 T:6336 WARNING: CHCDNControl::StartModule module path: C:\Program Files (x86)\IQIYI Video\PStyle\HCDNProxy.dll
+2016-11-05 12:56:56.494 T:6336 WARNING: HCDN StartModule Success!
+2016-11-05 12:56:56.495 T:6336    INFO: Init HCDN Module Param : (kernel path: rnel_QyClient\, cache path:, cache size:0)
+2016-11-05 12:56:56.495 T:6336 WARNING: Init HCDN Module:'p2p_kernel_path or local_cache_path not exists!'
+2016-11-05 12:56:56.507 T:7772   DEBUG: Enter Net Request
+2016-11-05 12:56:56.507 T:7772    INFO: send request: http://data.video.qiyi.com/v.f4v, set timeout: 3
+2016-11-05 12:56:56.536 T:7772    INFO: remote server ip: 111.206.13.76, http response code: 200
+2016-11-05 12:56:56.536 T:7772    INFO: date:Sat, 05 Nov 2016 04:57:06 GMT
+2016-11-05 12:56:56.536 T:7772    INFO: receive content-length: 139
+2016-11-05 12:56:56.537 T:7772    INFO: http exit: 0, still_running: 0
+2016-11-05 12:56:56.537 T:7772    INFO: success to send request: http://data.video.qiyi.com/v.f4v
+2016-11-05 12:56:56.537 T:7772    INFO: Location: {"t":"CNC|BeiJing-114.245.80.47","m":"1","time":"1478321826","v":"2015-12-22 v3.0.26","l":"http://111.206.23.144/v.f4v","z":"beijing4_cnc"}
+2016-11-05 12:56:56.537 T:7772    INFO: ParseBitstreamLimit request bs limit 0, CNC|BeiJing
+2016-11-05 12:56:56.537 T:7772   DEBUG: CurlHttpLoader::Close, 0
+2016-11-05 12:56:56.537 T:7772   DEBUG: CurlHttpLoader::Close, 1
+2016-11-05 12:56:56.537 T:7772   DEBUG: CurlHttpLoader::Close, 3
+2016-11-05 12:56:56.537 T:7772   DEBUG: Enter Net Request
+2016-11-05 12:56:56.537 T:7772    INFO: send request: http://puma.api.iqiyi.com/config/fetch?platform=pc&brand=2, set timeout: 3
+2016-11-05 12:56:56.577 T:7772    INFO: remote server ip: 119.188.147.32, http response code: 200
+2016-11-05 12:56:56.577 T:7772    INFO: date:Sat, 05 Nov 2016 04:57:05 GMT
+2016-11-05 12:56:56.577 T:7772    INFO: http exit: 0, still_running: 0
+2016-11-05 12:56:56.577 T:7772    INFO: success to send request: http://puma.api.iqiyi.com/config/fetch?platform=pc&brand=2
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: setting = 1
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: iqiyi_p2p_max_bitstream = 12
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: pps_p2p_first = false
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: pps_p2p_max_bitstream = 5
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: max_cache_file_size = 4096
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: pps_p2p_time_out = 15
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: hcdn_time_out = 15
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: iqiyi_p2p_time_out = 15
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: vip_upload = false
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: log_level = 1
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: cdn_request_block_size = 8
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: max_memory_usage = 128
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: post_process = true
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: ad_timeout_when_local = 2
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: have_2g3g_ad_when_local = false
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: upload_log_when_errors = |all|
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: upload_log_line_count = 500
+2016-11-05 12:56:56.578 T:7772    INFO: CONFIG: min_buffer_time = 3
+2016-11-05 12:56:56.578 T:7772   DEBUG: CurlHttpLoader::Close, 0
+2016-11-05 12:56:56.578 T:7772   DEBUG: CurlHttpLoader::Close, 1
+2016-11-05 12:56:56.578 T:7772   DEBUG: CurlHttpLoader::Close, 3
+2016-11-05 12:56:56.578 T:7772   DEBUG: CThread::StopThread, [7772] Action End
