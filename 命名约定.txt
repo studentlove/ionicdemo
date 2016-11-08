@@ -1,0 +1,108 @@
+service 服务  获取数据
+controller 业务逻辑
+rout  路由  不同的url访问不同的页面
+
+XXX.controller  某个模块功能的业务
+
+如果跳转链接失效 可以试试window.open("http://www.baidu.com","_self")
+
+promise
+
+reslove 成功  
+reject 失败
+
+promise。then（成功的函数返回data，失败的函数）.then(接受上一步返回的data的函数)
+
+
+先在app.js引入  在不同的模块需要用到时候 一定要引入js文件并且注入模块依赖
+然后注入用到的  
+
+模块在module注入
+
+如一个starter模块  angular.module('starter.controllers', [])
+
+注入  angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+
+
+服务 service一般在controller注入
+注入Chats服务
+angular.module('starter.services', [])
+
+.factory('Chats', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var chats = [{
+    id: 0,
+    name: 'Ben Sparrow',
+    lastText: 'You on your way?',
+    face: 'img/ben.png'
+  }
+
+
+
+ angular.module('starter.controllers', ['starter.services']).controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+  $scope.chat = Chats.get($stateParams.chatId);
+})
+
+服务有三种声明
+
+provide
+service
+factory
+
+
+
+指令  相当于是自定义的标签 或者属性  类似vue，react的组件方式
+
+e 标签元素  <tabs> </tabs>
+a  属性  <div tabs> </div>
+
+angular.module('components', []). 
+  directive('tabs', function() { 
+    return { 
+      restrict: 'E', 
+      transclude: true, 
+      scope: {}, 
+      controller: [ "$scope", function($scope) { 
+        var panes = $scope.panes = []; 
+  
+        $scope.select = function(pane) { 
+          angular.forEach(panes, function(pane) { 
+            pane.selected = false; 
+          }); 
+          pane.selected = true; 
+        } 
+  
+        this.addPane = function(pane) { 
+          if (panes.length == 0) $scope.select(pane); 
+          panes.push(pane); 
+        } 
+      }], 
+      template: 
+        '<div class="tabbable">' + 
+          '<ul class="nav nav-tabs">' + 
+            '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+ 
+              '<a href="" ng-click="select(pane)">{{pane.title}}</a>' + 
+            '</li>' + 
+          '</ul>' + 
+          '<div class="tab-content" ng-transclude></div>' + 
+        '</div>', 
+      replace: true 
+    }; 
+  }). 
+  directive('pane', function() { 
+    return { 
+      require: '^tabs', 
+      restrict: 'E', 
+      transclude: true, 
+      scope: { title: '@' }, 
+      link: function(scope, element, attrs, tabsCtrl) { 
+        tabsCtrl.addPane(scope); 
+      }, 
+      template: 
+        '<div class="tab-pane" ng-class="{active: selected}" ng-transclude>' + 
+        '</div>', 
+      replace: true 
+    }; 
+  })

@@ -56,3 +56,18 @@
 2016-11-05 12:56:56.578 T:7772   DEBUG: CurlHttpLoader::Close, 1
 2016-11-05 12:56:56.578 T:7772   DEBUG: CurlHttpLoader::Close, 3
 2016-11-05 12:56:56.578 T:7772   DEBUG: CThread::StopThread, [7772] Action End
+2016-11-06 01:04:26.014 T:6336 WARNING: HCDN StopModule...
+2016-11-06 01:04:26.089 T:6336   DEBUG: UnLoad Audio Engine
+2016-11-06 01:04:26.109 T:6336   DEBUG: Previous line repeats 1 times.
+2016-11-06 01:04:26.109 T:6336   DEBUG: UnLoad Audio Engine end
+2016-11-06 01:04:26.109 T:6336   DEBUG: UnInitFFmpeg
+2016-11-06 01:04:26.109 T:6336   DEBUG: Unloading FFmpeg dll begin!
+2016-11-06 01:04:26.109 T:6336   DEBUG: Unloading FFmpeg dll end!
+2016-11-06 01:04:26.109 T:6336   DEBUG: CurlHttpLoader::Close, 0
+2016-11-06 01:04:26.109 T:6336   DEBUG: CurlHttpLoader::Close, 1
+2016-11-06 01:04:26.109 T:6336   DEBUG: CurlHttpLoader::Close, 3
+2016-11-06 01:04:26.129 T:7776   DEBUG: Pingback exit!
+2016-11-06 01:04:26.129 T:7776   DEBUG: CThread::StopThread, [7776] Action End
+2016-11-06 01:04:26.129 T:6336   DEBUG: CurlHttpLoader::Close, 0
+2016-11-06 01:04:26.129 T:6336   DEBUG: CurlHttpLoader::Close, 1
+2016-11-06 01:04:26.129 T:6336   DEBUG: CurlHttpLoader::Close, 3
